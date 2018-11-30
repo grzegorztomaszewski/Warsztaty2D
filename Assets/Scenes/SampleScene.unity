@@ -229,6 +229,31 @@ Prefab:
       propertyPath: m_RootOrder
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 50676141296571192, guid: 27cbffbcd99bf3248b48e399e60180f3,
+        type: 2}
+      propertyPath: m_GravityScale
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 50676141296571192, guid: 27cbffbcd99bf3248b48e399e60180f3,
+        type: 2}
+      propertyPath: m_Mass
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 50676141296571192, guid: 27cbffbcd99bf3248b48e399e60180f3,
+        type: 2}
+      propertyPath: m_AngularDrag
+      value: 0.05
+      objectReference: {fileID: 0}
+    - target: {fileID: 50676141296571192, guid: 27cbffbcd99bf3248b48e399e60180f3,
+        type: 2}
+      propertyPath: m_LinearDrag
+      value: 0.7
+      objectReference: {fileID: 0}
+    - target: {fileID: 114956406936765932, guid: 27cbffbcd99bf3248b48e399e60180f3,
+        type: 2}
+      propertyPath: flapForce
+      value: 300
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 27cbffbcd99bf3248b48e399e60180f3, type: 2}
   m_IsPrefabAsset: 0
