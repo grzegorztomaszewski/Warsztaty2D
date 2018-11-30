@@ -199,11 +199,11 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4016642580475112, guid: 27cbffbcd99bf3248b48e399e60180f3, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -0.076656654
+      value: -0.496
       objectReference: {fileID: 0}
     - target: {fileID: 4016642580475112, guid: 27cbffbcd99bf3248b48e399e60180f3, type: 2}
       propertyPath: m_LocalPosition.y
-      value: -0.039822415
+      value: -0.259
       objectReference: {fileID: 0}
     - target: {fileID: 4016642580475112, guid: 27cbffbcd99bf3248b48e399e60180f3, type: 2}
       propertyPath: m_LocalPosition.z
@@ -252,7 +252,11 @@ Prefab:
     - target: {fileID: 114956406936765932, guid: 27cbffbcd99bf3248b48e399e60180f3,
         type: 2}
       propertyPath: flapForce
-      value: 300
+      value: 270
+      objectReference: {fileID: 0}
+    - target: {fileID: 1455824177384982, guid: 27cbffbcd99bf3248b48e399e60180f3, type: 2}
+      propertyPath: m_TagString
+      value: Bird
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 27cbffbcd99bf3248b48e399e60180f3, type: 2}
@@ -385,6 +389,15 @@ Prefab:
     - target: {fileID: 4561149236311516, guid: 8a6d0aa5d10b8a24daca565f965cc8ad, type: 2}
       propertyPath: m_RootOrder
       value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1977883840185900, guid: 8a6d0aa5d10b8a24daca565f965cc8ad, type: 2}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 61515192134736942, guid: 8a6d0aa5d10b8a24daca565f965cc8ad,
+        type: 2}
+      propertyPath: m_IsTrigger
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8a6d0aa5d10b8a24daca565f965cc8ad, type: 2}

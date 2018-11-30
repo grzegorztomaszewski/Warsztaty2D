@@ -15,15 +15,15 @@ public class Spwaner : MonoBehaviour {
 	void Update () {
 		
 	}
-    //waiting
+    //Interfejs spawnujący pipes'y po określonym czasie
     public IEnumerator spawnPipeCoroutine()
     {
         while (true)
         {
-            spawnVector = new Vector3(transform.position.x, Random.Range(-0.3f, 0.85f), 0);
+            spawnVector = new Vector3(transform.position.x, Random.Range(-0.3f, 0.85f), 0); // x=x, y=losowo w przedziale (-0.3f, 0.85f), y=0
             Instantiate(pipePrefab, spawnVector, Quaternion.identity);
             //Debug.Log("Spawn");
-            yield return new WaitForSeconds(spawnDelay);
+            yield return new WaitForSeconds(spawnDelay);//Delay spawner pipes'ów
         }
     }
 }
