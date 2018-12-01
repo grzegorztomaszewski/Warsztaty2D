@@ -203,7 +203,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4016642580475112, guid: 27cbffbcd99bf3248b48e399e60180f3, type: 2}
       propertyPath: m_LocalPosition.y
-      value: -0.259
+      value: 0.434
       objectReference: {fileID: 0}
     - target: {fileID: 4016642580475112, guid: 27cbffbcd99bf3248b48e399e60180f3, type: 2}
       propertyPath: m_LocalPosition.z
@@ -258,6 +258,12 @@ Prefab:
       propertyPath: m_TagString
       value: Bird
       objectReference: {fileID: 0}
+    - target: {fileID: 212993977827029722, guid: 27cbffbcd99bf3248b48e399e60180f3,
+        type: 2}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300148, guid: 619ba6ebe5ff74d4f9008794ed4cf278,
+        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 27cbffbcd99bf3248b48e399e60180f3, type: 2}
   m_IsPrefabAsset: 0
@@ -313,7 +319,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300066, guid: 619ba6ebe5ff74d4f9008794ed4cf278, type: 3}
+  m_Sprite: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -321,7 +327,7 @@ SpriteRenderer:
   m_Size: {x: 0.13, y: 0.14}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!4 &1099295029
