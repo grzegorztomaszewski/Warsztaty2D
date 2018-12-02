@@ -20,5 +20,9 @@ public class BirdController : MonoBehaviour {
         {
             rb2d.AddForce(Vector2.up * flapForce);
         }
+    if (rb2d == true)
+        {
+          
+        }
     }
 }
