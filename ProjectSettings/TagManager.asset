@@ -8,6 +8,7 @@ TagManager:
   - Coin
   - Bird
   - PointCounter
+  - Point
   layers:
   - Default
   - TransparentFX
