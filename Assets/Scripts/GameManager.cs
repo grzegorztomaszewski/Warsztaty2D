@@ -26,7 +26,8 @@ public class GameManager : MonoBehaviour {
 	
 	
 	// Update is called once per frame
-	void Update () {
-        pointsText.text = "" + pointsText;
+	void Update ()
+    {
+        pointsText.text = "" + pointsText; // wyświetla liczbe pkt jako tekst
 	}
 }
