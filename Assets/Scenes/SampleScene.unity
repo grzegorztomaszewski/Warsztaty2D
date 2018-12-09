@@ -544,6 +544,21 @@ Prefab:
       propertyPath: m_RootOrder
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 50334511968659638, guid: d43a8b6a5a0aca543a6737bd6e7265dc,
+        type: 2}
+      propertyPath: m_Mass
+      value: 0.01
+      objectReference: {fileID: 0}
+    - target: {fileID: 114791887106921072, guid: d43a8b6a5a0aca543a6737bd6e7265dc,
+        type: 2}
+      propertyPath: flapForce
+      value: 170
+      objectReference: {fileID: 0}
+    - target: {fileID: 50334511968659638, guid: d43a8b6a5a0aca543a6737bd6e7265dc,
+        type: 2}
+      propertyPath: m_GravityScale
+      value: 55
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: d43a8b6a5a0aca543a6737bd6e7265dc, type: 2}
   m_IsPrefabParent: 0

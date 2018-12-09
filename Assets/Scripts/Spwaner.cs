@@ -23,7 +23,7 @@ public class Spwaner : MonoBehaviour {
 			if (GameManager.instance.isAlive)
 			{
 
-				spawnVector = new Vector3(transform.position.x, Random.Range(248f, 410f), 0); // x=x, y=losowo w przedziale (-0.3f, 0.85f), y=0
+				spawnVector = new Vector3(transform.position.x, Random.Range(333f, 262f), 0); // x=x, y=losowo w przedziale (-0.3f, 0.85f), y=0
 			}
 				Instantiate(pipePrefab, spawnVector, Quaternion.identity);
 			//Debug.Log("Spawn");
