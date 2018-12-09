@@ -15,9 +15,9 @@ public class Pipe : MonoBehaviour {
 	{
 	//Moving pipes from right to left side
 		
-        if(GameManager.instance.isAlive)
-        {
-            transform.Translate(Vector3.left * speed);
-        }
+		if(GameManager.instance.isAlive)
+		{
+			transform.Translate(Vector3.left * speed);
+		}
 	}
 }
