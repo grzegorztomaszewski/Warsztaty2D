@@ -32,12 +32,12 @@ public class BirdController : MonoBehaviour {
     void Update ()
     {
     //jump
-    if (Input.GetKeyDown(KeyCode.Space) /*&& isAlive*/)
+    if (Input.GetKeyDown(KeyCode.Space) && isAlive)
         {
             rb2d.AddForce(Vector2.up * flapForce);
            // anim.SetTrigger("Flap");
         }
-        Mathf.Clamp(rb2d.velocity.y, -maxSpeed, maxSpeed);
+        //Mathf.Clamp(rb2d.velocity.y, -maxSpeed, maxSpeed);
 
         if (rb2d == true)
         {
