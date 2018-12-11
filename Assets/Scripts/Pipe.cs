@@ -2,7 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Pipe : MonoBehaviour {
+public class Pipe : MonoBehaviour
+{
 	public float speed;
 	// Use this for initialization
 	void Start ()
@@ -20,4 +21,5 @@ public class Pipe : MonoBehaviour {
 			transform.Translate(Vector3.left * speed);
 		}
 	}
+
 }

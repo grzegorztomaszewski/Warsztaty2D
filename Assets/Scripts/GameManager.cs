@@ -7,6 +7,7 @@ public class GameManager : MonoBehaviour {
 	public Text pointsText;
 	public bool isAlive = true;
 	public static GameManager instance = null;
+    public float points;
 	// Use this for initialization
 	private void Awake()
 	{
@@ -28,6 +29,6 @@ public class GameManager : MonoBehaviour {
 	// Update is called once per frame
 	void Update ()
 	{
-		pointsText.text = "" + pointsText; // wyświetla liczbe pkt jako tekst
+		pointsText.text = "Punkty: " + points; // wyświetla liczbe pkt jako tekst
 	}
 }

@@ -9,6 +9,7 @@ public class BirdController : MonoBehaviour {
     public float maxSpeed;
     public Animator anim;
     public bool isAlive = true;
+    public float points;
     // Use this for initialization
     private void Awake()
     {
@@ -54,5 +55,13 @@ public class BirdController : MonoBehaviour {
         }
         
     }
-   
+    //dodaje punkty
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.gameObject.tag == "Point")//Pierwszy obiekt w prefabie "Pipes" posiad tag 'Point' 
+        {
+            points++;
+            Debug.Log(points);
+        }
+    }
 }
