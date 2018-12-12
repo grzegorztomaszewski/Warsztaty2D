@@ -3,13 +3,13 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class GameManager : MonoBehaviour {
-	public Text pointsText;
-	public bool isAlive = true;
-	public static GameManager instance = null;
-    public float points;
-	// Use this for initialization
-	private void Awake()
+public class GameManager : BirdController{
+	
+	//public bool isAlive = true;
+	new public static GameManager instance = null;
+    public Text pointsText; //punkty jako tekst
+    // Use this for initialization
+    private void Awake()
 	{
 		if (GameManager.instance == null)
 		{
@@ -29,6 +29,6 @@ public class GameManager : MonoBehaviour {
 	// Update is called once per frame
 	void Update ()
 	{
-		pointsText.text = "Punkty: " + points; // wyświetla liczbe pkt jako tekst
-	}
+      pointsText.text = "" + points; // wyświetla liczbe pkt jako tekst
+    }
 }

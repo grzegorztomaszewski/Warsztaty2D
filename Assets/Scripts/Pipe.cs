@@ -21,5 +21,4 @@ public class Pipe : MonoBehaviour
 			transform.Translate(Vector3.left * speed);
 		}
 	}
-
 }

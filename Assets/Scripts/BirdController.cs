@@ -9,7 +9,8 @@ public class BirdController : MonoBehaviour {
     public float maxSpeed;
     public Animator anim;
     public bool isAlive = true;
-    public float points;
+    public static float points; //punkty
+
     // Use this for initialization
     private void Awake()
     {
@@ -25,8 +26,8 @@ public class BirdController : MonoBehaviour {
     void Start ()
     {
         rb2d = GetComponent<Rigidbody2D>();
-       // anim = GetComponent<Animator>();
-       // anim.SetBool("isAlive", GameManager.instance.isAlive);
+       anim = GetComponent<Animator>();
+       anim.SetBool("isAlive", GameManager.instance.isAlive);
     }
     
     // Update is called once per frame
@@ -46,6 +47,7 @@ public class BirdController : MonoBehaviour {
         }
 
     }
+    //kolizja z pipe'm uśmierca Bird'a
     private void OnCollisionEnter2D(Collision2D collision)
     {
         if(collision.gameObject.tag == "Pipe")
@@ -61,7 +63,7 @@ public class BirdController : MonoBehaviour {
         if (collision.gameObject.tag == "Point")//Pierwszy obiekt w prefabie "Pipes" posiad tag 'Point' 
         {
             points++;
-            Debug.Log(points);
+            //Debug.Log(points);
         }
     }
 }
