@@ -14,11 +14,11 @@ public class Pipe : MonoBehaviour
 	// Update is called once per frame
 	void Update ()
 	{
-	//Moving pipes from right to left side
-		
-		if(GameManager.instance.isAlive)
-		{
-			transform.Translate(Vector3.left * speed);
-		}
-	}
+        //Moving pipes from right to left side
+
+        if (GameManager.instance.isAlive)
+        {
+            transform.Translate(Vector3.left * speed);
+        }
+    }
 }

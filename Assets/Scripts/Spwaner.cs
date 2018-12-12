@@ -25,6 +25,7 @@ public class Spwaner : MonoBehaviour {
 
 				spawnVector = new Vector3(transform.position.x, Random.Range(178f, 338f), 0); // x=x, y=losowo w przedziale (-0.3f, 0.85f), y=0
 			}
+                
 				Instantiate(pipePrefab, spawnVector, Quaternion.identity);
 			//Debug.Log("Spawn");
 			yield return new WaitForSeconds(spawnDelay);//Delay spawner pipes'ów
