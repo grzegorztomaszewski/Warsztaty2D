@@ -8,6 +8,7 @@ public class GameManager : BirdController{
 	//public bool isAlive = true;
 	new public static GameManager instance = null;
     public Text pointsText; //punkty jako tekst
+
     // Use this for initialization
     private void Awake()
 	{

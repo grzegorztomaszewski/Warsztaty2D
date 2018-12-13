@@ -11,6 +11,8 @@ public class BirdController : MonoBehaviour {
     public bool isAlive = true;
     public static float points; //punkty
 
+    public bool flap = false;
+
     public AudioClip audioFlap; //audio flap'a
     public AudioClip audioPoint; //audio point'a
     public AudioClip audioHit; //audio hita w pipe'a
@@ -34,19 +36,21 @@ public class BirdController : MonoBehaviour {
     {
        rb2d = GetComponent<Rigidbody2D>();
        anim = GetComponent<Animator>();
-       anim.SetBool("isAlive", GameManager.instance.isAlive);
+       anim.SetBool("isAlive", isAlive == true);
+       anim.SetBool("flap", flap == false);
        audioSource = GetComponent<AudioSource> ();
     }
     
     // Update is called once per frame
     void Update ()
     {
-    //jump
-    if (Input.GetKeyDown(KeyCode.Space) && isAlive)
+        //jump
+        if (Input.GetKeyDown(KeyCode.Space) && isAlive == true)
         {
-            rb2d.AddForce(Vector2.up * flapForce);
-            audioSource.PlayOneShot(audioFlap); //dźwięk wzlotu
-           // anim.SetTrigger("Flap");            //animacja lotu
+         rb2d.AddForce(Vector2.up * flapForce);
+         audioSource.PlayOneShot(audioFlap); //dźwięk wzlotu
+         anim.SetBool("Flap", flap == true);            //przestawia trigger "Flap" na true
+         anim.SetBool("Flap", flap == false);          //przestawia trigger "Flap" na false
         }
         //Mathf.Clamp(rb2d.velocity.y, -maxSpeed, maxSpeed);
 
@@ -64,7 +68,7 @@ public class BirdController : MonoBehaviour {
             audioSource.PlayOneShot(audioHit); // dźwięk hita w pipe'a
             isAlive = false;
            // audioSource.PlayOneShot(audioDead); // dźwięk dead'a po uderzeniu w pipe'a 
-          // anim.SetBool("isAlive", GameManager.instance.isAlive);
+            anim.SetBool("isAlive", isAlive);
         }
         
     }

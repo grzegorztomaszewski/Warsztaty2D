@@ -371,6 +371,7 @@ MonoBehaviour:
   maxSpeed: 0
   anim: {fileID: 0}
   isAlive: 1
+  flap: 0
   audioFlap: {fileID: 0}
   audioPoint: {fileID: 0}
   audioHit: {fileID: 0}
@@ -386,12 +387,12 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 866955999}
+  - component: {fileID: 866955995}
   - component: {fileID: 866955998}
   - component: {fileID: 866955997}
   - component: {fileID: 866955996}
-  - component: {fileID: 866955995}
-  - component: {fileID: 866956000}
   - component: {fileID: 866956001}
+  - component: {fileID: 866956000}
   m_Layer: 0
   m_Name: Bird
   m_TagString: Bird
@@ -414,8 +415,9 @@ MonoBehaviour:
   flapForce: 170
   rb2d: {fileID: 866955997}
   maxSpeed: 0
-  anim: {fileID: 0}
+  anim: {fileID: 866956000}
   isAlive: 1
+  flap: 0
   audioFlap: {fileID: 8300000, guid: 05b938060af184e4ea5dbe66f9478669, type: 3}
   audioPoint: {fileID: 8300000, guid: f94047fb5effcbb4d84e2593df27e00f, type: 3}
   audioHit: {fileID: 8300000, guid: 5018f3aba7eacb84cba7a38f48549864, type: 3}
@@ -540,7 +542,7 @@ Animator:
   m_Controller: {fileID: 9100000, guid: 53b55392cef24b84a8bd4e7073ffe3ae, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
-  m_ApplyRootMotion: 0
+  m_ApplyRootMotion: 1
   m_LinearVelocityBlending: 0
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
@@ -727,7 +729,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4c3b844bb10020a4ca84ba6a29874037, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pipePrefab: {fileID: 1205629564579202, guid: 8a6d0aa5d10b8a24daca565f965cc8ad, type: 2}
+  pipePrefab: {fileID: 1757332909241982, guid: 8a6d0aa5d10b8a24daca565f965cc8ad, type: 2}
   spawnDelay: 1.5
   spawnVector: {x: 0, y: 0, z: 0}
 --- !u!1 &1695583532
@@ -837,6 +839,7 @@ MonoBehaviour:
   maxSpeed: 0
   anim: {fileID: 0}
   isAlive: 1
+  flap: 0
   audioFlap: {fileID: 0}
   audioPoint: {fileID: 0}
   audioHit: {fileID: 0}
